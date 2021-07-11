@@ -86,7 +86,7 @@ a {
 }
 
 .header__social {
-  padding: 70px 0 20px 70px;
+  padding: 70px 0 20px 60px;
 }
 
 .social {
@@ -272,7 +272,7 @@ a {
 }
 
 .carousel {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .carousel__inner {
@@ -333,6 +333,11 @@ a {
   justify-content: space-between;
 }
 
+.contacts__info {
+  padding-left: 10px;
+  padding-top: 50px;
+}
+
 .contacts__list {
   list-style: none;
 }
@@ -352,7 +357,6 @@ a {
 
 .contacts__title {
   color: #fff;
-  margin-bottom: 16px;
   margin-left: 53px;
   text-align: left;
 }
@@ -372,6 +376,7 @@ a {
   font-size: 24px;
   padding: 0 15px;
   text-align: center;
+  font-family: inherit;
 }
 
 .contacts__input::placeholder {
@@ -416,7 +421,7 @@ a {
   }
 
   .services {
-    padding-top: 250px;
+    padding-top: 150px;
   }
 
   .services__inner {
@@ -441,6 +446,10 @@ a {
     width: 100%;
     margin-right: 0;
   }
+
+  .benefits__images {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -462,6 +471,71 @@ a {
 
   .header__social {
     padding: 30px 0 20px 53px;
+  }
+
+  .contacts__inner {
+    display: block;
+    text-align: center;
+  }
+
+  .contacts__list {
+    margin-bottom: 25px;
+  }
+
+  .contacts__input {
+    width: 100%;
+  }
+
+  .contacts__btn {
+    margin-top: 20px;
+  }
+
+  .contacts__title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contacts__info {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits__inner {
+    text-align: center;
+  }
+
+  .benefits__list {
+    padding: 25px 15px;
+  }
+
+  .benefits__item {
+    width: 100%;
+  }
+
+  .benefits__title {
+    margin-left: 0;
+  }
+
+  .benefits__item-num {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer__social {
+    width: 100%;
+    justify-content: center;
+    margin: 25px 0;
   }
 }
 
@@ -506,6 +580,14 @@ a {
   .services__content {
     text-align: center;
   }
+
+  .services__content-title {
+    width: 100%;
+  }
+
+  .carousel__item-img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -548,9 +630,21 @@ a {
   .button--decor::after {
     margin-left: 110px;
   }
-}
 
-@media (max-width: 360px) {
+  .services__inner,
+  .benefits,
+  .carousel {
+    margin-bottom: 50px;
+  }
+
+  .carousel .slick-dots button {
+    width: 10px;
+  }
+
+  .contacts__form {
+    padding: 50px 10px 57px;
+  }
+
 
   .button--decor::before,
   .button--decor::after {
