@@ -410,7 +410,7 @@ a {
 }
 
 @media (max-width: 1140px) {
-  .services__item::hover {
+  .services__item:hover {
     width: 450px;
   }
 }
